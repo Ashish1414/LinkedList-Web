@@ -4817,7 +4817,7 @@ body.search .no-results .search-form input[type=submit] { background-color: var(
   [data-mobile-header-scheme=light] .navbar-header { background-color: #fff; }
   [data-mobile-header-scheme=light] .lqd-mobile-modules-container .social-icon a, [data-mobile-header-scheme=light] .lqd-mobile-modules-container .social-icon a:hover { color: #000; }
   [data-mobile-header-scheme=light] .lqd-mobile-modules-container .ld-module-trigger { color: #000 !important; }
-  [data-mobile-header-scheme=gray] .main-header .navbar-header { background-color: #f6f6f6; }
+  [data-mobile-header-scheme=gray] .main-header .navbar-header { background-color: #ffffff; }
   [data-mobile-header-scheme=gray] .main-header .lqd-mobile-modules-container .social-icon a, [data-mobile-header-scheme=gray] .main-header .lqd-mobile-modules-container .social-icon a:hover { color: #000; }
   [data-mobile-header-scheme=gray] .main-header .ld-module-trigger { color: #000 !important; }
   [data-mobile-header-scheme=dark] .navbar-header { background-color: #191D18; }
@@ -7738,3 +7738,37 @@ body.search .no-results .search-form input[type=submit] { background-color: var(
   .page-has-frame .is-stuck { left: 20px; right: 20px; }
   .page-has-frame .megamenu.megamenu-fullwidth .nav-item-children { width: calc( 100vw - 40px ); left: calc(50% + 10px) !important; right: calc(50% + 10px) !important; margin-left: calc(-50vw + 10px) !important; margin-right: calc(-50vw + 10px) !important; }
   .page-has-frame .megamenu.megamenu-fullwidth .megamenu-container { width: calc( 100vw - 40px ) !important; } }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  /* .cont{
+    position: relative;
+    width: 100%;
+  } */
+  
