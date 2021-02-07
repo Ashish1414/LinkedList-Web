@@ -7739,6 +7739,13 @@ body.search .no-results .search-form input[type=submit] { background-color: var(
   .page-has-frame .megamenu.megamenu-fullwidth .nav-item-children { width: calc( 100vw - 40px ); left: calc(50% + 10px) !important; right: calc(50% + 10px) !important; margin-left: calc(-50vw + 10px) !important; margin-right: calc(-50vw + 10px) !important; }
   .page-has-frame .megamenu.megamenu-fullwidth .megamenu-container { width: calc( 100vw - 40px ) !important; } }
 
+
+
+
+  .contain {
+    position: relative;
+    width: 50%;
+  }
   .overlay {
     position: absolute;
     top: 0;
@@ -7767,11 +7774,7 @@ body.search .no-results .search-form input[type=submit] { background-color: var(
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  /* .cont{
-    position: relative;
-    width: 100%;
-  } */
-  
+ 
 
 
   h1,
@@ -8022,7 +8025,7 @@ align-items: center;
 .single-contact-address-box {
 position: relative;
 display: block;
-background: #131313;
+background: #efefef;
 padding: 85px 30px 77px;
 }
 .single-contact-address-box .icon-holder{
@@ -8038,7 +8041,7 @@ color: #ffffff;
 margin: 0px 0 9px;
 }
 .single-contact-address-box h2{
-color: #FFA500;
+color: #fd5c4c;
 font-size: 24px;
 font-weight: 600;
 margin: 0 0 19px;
