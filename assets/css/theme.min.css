@@ -28920,7 +28920,7 @@ body.search .no-results .search-form input[type="submit"] {
   transition: 0.5s ease;
   z-index: 99999999999999999999;
   background: none;
-  background-color: #008cba;
+  background-color: ##fd5c4c;
 }
 
 .overlay:hover {
