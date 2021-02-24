@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="assets/css/theme-vendors.min.css" />
 	<link rel="stylesheet" href="assets/css/theme.min.css" />
 	<link rel="stylesheet" href="assets/css/themes/seo.css" />
+	
 
 
 	<!-- Head Libs -->
@@ -973,58 +974,7 @@
 				</div><!-- /.container 
 			</section><!-- /.vc_row pt-90 pb-90 -->
 
-	<section class="vc_row pt-50 pb-50">
-		<div class="container">
-			<!-- <div class="row">
-
-						<div class="col-md-3 col-sm-6 text-center text-sm-left">
-
-							<div class="liquid-counter liquid-counter-default liquid-counter-lg text-center text-sm-left">
-								<div class="liquid-counter-element text-black" data-enable-counter="true" data-counter-options='{"targetNumber":"2520","blurEffect":false}'>
-									<span>2520</span>
-								</div><!-- /.liquid-counter-element -->
-			<!-- <span class="liquid-counter-text liquid-text-bottom text-primary">PROJECTS DONE</span> -->
-		</div><!-- /.liquid-counter -->
-
-		</div>
-		<!-- /.col-md-3 col-sm-6 
-
-						<div class="col-md-3 col-sm-6 text-center text-sm-left">
-
-							<div class="liquid-counter liquid-counter-default liquid-counter-lg text-center text-sm-left">
-								<div class="liquid-counter-element text-black" data-enable-counter="true" data-counter-options='{"targetNumber":"615","blurEffect":false}'>
-									<span>615</span>
-								</div><!-- /.liquid-counter-element 
-								<span class="liquid-counter-text liquid-text-bottom text-primary">HAPPY CUSTOMERS</span>
-							</div><!-- /.liquid-counter 
-
-						</div><!-- /.col-md-3 col-sm-6 
-
-						<div class="col-md-3 col-sm-6 text-center text-sm-left">
-
-							<div class="liquid-counter liquid-counter-default liquid-counter-lg text-center text-sm-left">
-								<div class="liquid-counter-element text-black" data-enable-counter="true" data-counter-options='{"targetNumber":"102","blurEffect":false}'>
-									<span>102</span>
-								</div><!-- /.liquid-counter-element 
-								<span class="liquid-counter-text liquid-text-bottom text-primary">WINNING AWWARDS</span>
-							</div><!-- /.liquid-counter 
-
-						</div><!-- /.col-md-3 col-sm-6 
-
-						<div class="col-md-3 col-sm-6 text-center text-sm-left">
-
-							<div class="liquid-counter liquid-counter-default liquid-counter-lg text-center text-sm-left">
-								<div class="liquid-counter-element text-black" data-enable-counter="true" data-counter-options='{"targetNumber":"3,200","blurEffect":false}'>
-									<span>3,200</span>
-								</div><!-- /.liquid-counter-element 
-								<span class="liquid-counter-text liquid-text-bottom text-primary">EMPLOYEES WORLDWIDE</span>
-							</div><!-- /.liquid-counter -->
-
-		</div><!-- /.col-md-3 col-sm-6 -->
-
-		<!-- </div>  -->
-		</div><!-- /.container -->
-	</section><!-- /.vc_row pt-50 pb-50 -->
+	
 
 	<section class="vc_row bg-no-repeat bg-sm-none pt-90 pb-50"
 		style="background-image: url(./assets/demo/bg/bg-78.svg); background-position: 12% 35%;">
@@ -1302,24 +1252,23 @@
 								</div>
 							</div>
 							<div class="inner-box">
-								<form id="contact-form" name="contact_form" class="default-form"
-									action="inc/sendmail.php" method="post">
+								<form id="contact_form" name="contact_form" class="default-form" >
 									<div class="row">
 										<div class="col-xl-6 col-lg-12">
 											<div class="row">
 												<div class="col-xl-6">
 													<div class="input-box">
-														<input type="text" name="form_name" value="" placeholder="Name"
-															required="">
+														<input type="text" name="name" value="" placeholder="Name"
+															required="true">
 													</div>
 													<div class="input-box">
-														<input type="text" name="form_phone" value=""
+														<input type="text" name="phone" value="" maxlength="10"  pattern="[0-9]{10}"
 															placeholder="Phone">
 													</div>
 												</div>
 												<div class="col-xl-6">
 													<div class="input-box">
-														<input type="email" name="form_email" value=""
+														<input type="email" name="email" value=""
 															placeholder="Email" required="">
 													</div>
 
@@ -1335,13 +1284,13 @@
 										</div>
 										<div class="col-xl-6 col-lg-12">
 											<div class="input-box">
-												<textarea name="form_message" placeholder="Your Message..."
+												<textarea name="message" placeholder="Your Message..."
 													required=""></textarea>
 											</div>
 											<div class="button-box">
 												<input id="form_botcheck" name="form_botcheck" class="form-control"
 													type="hidden" value="">
-												<button type="submit" data-loading-text="Please wait...">Send
+												<button onclick="submitFunc()"  data-loading-text="Please wait...">Send
 													Message<span class="flaticon-next"></span></button>
 											</div>
 										</div>
@@ -1354,6 +1303,10 @@
 				</div>
 			</div>
 		</section>
+
+		
+
+
 		<!-- <div class="contact-form-container ">
 					<div class="contact-us">
 						<div class="contact-header">
@@ -1471,9 +1424,9 @@
 					<div class="lqd-column col-md-5 text-md-right">
 
 						<ul class="social-icon social-icon-md mb-25">
-							<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="https://www.facebook.com/Linked-List-Technologies-103863965073250" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFhyF2um5Ee4QAAAXe-nP9AYpJS6CzigtonBbcLlaGhN5gngfpI7KRTxqxMnEtdvcOiC0e8-JS0PobmnwKF028yIh72-1E3KVK5j63JuAvWY6y5EMiZNWCmAfAALPcszB9iw3s=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Flinked-list-technologies" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="" target="_blank"><i class="fa fa-instagram"></i></a></li>
 							<!-- <li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li> -->
 						</ul>
 
@@ -1491,7 +1444,30 @@
 	<script src="./assets/js/theme-vendors.js"></script>
 	<script src="./assets/js/theme.min.js"></script>
 	<script src="./assets/js/liquidAjaxMailchimp.min.js"></script>
+<script>
+	function submitFunc() {
+		const myForm = document.getElementById('contact_form')
+		console.log("myform is",myForm)
+		myForm.addEventListener('submit', function (e){
+				e.preventDefault();
 
+				const formData = new FormData(this);
+		// 		// JSONstringify(formData);
+				fetch('http://worldtpm.dx.am/api/linkedlist/PostContactus.php', {
+					method : 'post',
+					body : formData
+				}).then(function (response){
+					return response.text();
+				}).then(function(text){
+					console.log(text);
+				})
+
+
+		})}
+	
+		</script>
+
+	
 </body>
 
 </html>

@@ -21,10 +21,16 @@
 	<link rel="stylesheet" href="assets/css/themes/seo.css" />
 	
 	<!-- Head Libs -->
-	<script async src="assets/vendors/modernizr.min.js"></script>
-	
+    <script async src="assets/vendors/modernizr.min.js"></script>
+    <script async src="assets/vendors/bubble.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/just-animate/1.1.0/just-animate-all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/just-animate/1.1.0/just-animate-all.min.js"></script>
+<link rel="stylesheet" href = "C:\Users\Saloni\Desktop\linkedlist\LinkedList-Web\bubble.css" />
+
 </head>
-<body>
+<body onload="startBubbles()">
 
     <header class="main-header main-header-overlay">
 			
@@ -159,32 +165,38 @@
         
     </header><!-- /.main-header -->
 <section id="services" class="vc_row pt-90 pb-90 bg-no-repeat" style="background-image: url(./assets/demo/bg/bg-77.svg); background-position: 500% 0%;">
+    
     <!-- <img src="./assets/demo/misc/services.jpg" style="width: 400px; margin-top: 30% ; height: 500px"alt="Linked List Technologies"> -->
     
     <div class="container">
+       
 
-        <div class="row d-flex flex-wrap align-items-center">
+        <div class="row d-flex">
+            <div class='col'>
+                <img src="assets/img/services.jpeg"  style="width: 400px; margin-top: 10% ; height: 500px">
+            </div>
+            
 
-            <div
+            <!-- <div
             class="lqd-column col-md-5 mb-30"
             data-custom-animations="true"
             data-ca-options='{"triggerHandler":"inview", "animationTarget":"all-childs", "duration":"1600", "delay":"160", "easing":"easeOutQuint", "direction":"forward", "initValues":{"translateY":30, "opacity":0}, "animations":{"translateY":0, "opacity":1}}'>
 
                 <header class="fancy-title pr-md-4">
-                    <!-- <h6 class="text-uppercase">Services</h6> -->
-                    <!-- <h2><strong>Best solutions</strong> for you</h2> -->
+                    <h6 class="text-uppercase">Services</h6> 
+                   <h2><strong>Best solutions</strong> for you</h2> 
                 </header>
                
-
-                <!-- <p class="font-size-18 lh-15 mb-55">We provide digital experience services to startups and small businesses to looking for a partner of their digital media, design & development, lead generation and communications requirents. We work with you, not for you. Although we have a great resources</p> -->
+               <p class="font-size-18 lh-15 mb-55">We provide digital experience services to startups and small businesses to looking for a partner of their digital media, design & development, lead generation and communications requirents. We work with you, not for you. Although we have a great resources</p> 
 
                 <a
                 href="#"
                 class="btn btn-solid text-uppercase btn-md circle btn-bordered border-thin btn-gradient font-weight-bold px-2"
                 data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
+                
                     <span>
                         <span class="btn-gradient-bg"></span>
-                        <!-- <span class="btn-txt">See all services</span> -->
+                         <span class="btn-txt">See all services</span> 
                         <span class="btn-gradient-bg btn-gradient-bg-hover"></span>
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" class="btn-gradient-border" width="100%" height="100%">
                             <defs>
@@ -197,13 +209,13 @@
                         </svg>
                     </span>
                 </a>
+                
 
-            </div><!-- /.lqd-column col-md-5 -->
+            </div>/.lqd-column col-md-5 -->
 
             <div
             class="lqd-column col-md-3 col-md-offset-1"
             >
-
                 <div
                 class="lqd-column-inner"
                 data-parallax="true"
@@ -350,6 +362,25 @@
                                 <h6 class="text-uppercase">Projects</h6>
                                 <h2><strong>Latest</strong> works</h2>
                             </header>
+                            <div id='score' >
+                                <div class="bubble-modal">
+                                    <div class="modal-content">
+                                       <div class="modal-header">
+                                         <h5 class="modal-title" id="bubbleModalTitle">
+                                            Title goes here
+                                          </h5>
+                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                           <span aria-hidden="true">&times;</span>
+                                         </button>
+                                       </div>
+                                       <div class="modal-body">
+                                         lorem
+                                       </div>
+                                 
+                                       </div>
+                                     </div>
+                                 </div>
+                            </div>
                         </div><!-- /.col-md-6 -->
                         <div class="col-md-6">
                             <div class="liquid-filter-items align-items-center justify-content-end mb-10">
@@ -361,6 +392,23 @@
                                         <li data-filter=".ecommerce"><span>Ecommerce</span></li>
                                     </ul> -->
                                 </div><!-- /.liquid-filter-items-inner -->
+                                <!-- <div class="bubble-modal">
+                                    <div class="modal-content">
+                                       <div class="modal-header">
+                                         <h5 class="modal-title" id="bubbleModalTitle">
+                                            Title goes here
+                                          </h5>
+                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                           <span aria-hidden="true">&times;</span>
+                                         </button>
+                                       </div>
+                                       <div class="modal-body">
+                                         lorem
+                                       </div>
+                                 
+                                       </div>
+                                     </div> -->
+                                 </div>
                             </div><!-- /.liquid-filter-items -->
                         </div><!-- /.col-md-6 -->
                     </div><!-- /.row -->
@@ -587,8 +635,8 @@
                 <div class="lqd-column col-md-5 text-md-right">
                     
                     <ul class="social-icon social-icon-md mb-25">
-                        <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/Linked-List-Technologies-103863965073250" target="_blank"><i class="fa fa-facebook"></i></a></li>
+					    <li><a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFhyF2um5Ee4QAAAXe-nP9AYpJS6CzigtonBbcLlaGhN5gngfpI7KRTxqxMnEtdvcOiC0e8-JS0PobmnwKF028yIh72-1E3KVK5j63JuAvWY6y5EMiZNWCmAfAALPcszB9iw3s=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Flinked-list-technologies" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                         <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
                         <!-- <li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li> -->
                     </ul>
@@ -601,4 +649,6 @@
     
 </footer>
 
+
 </body>
+<script src="C:\Users\Saloni\Desktop\linkedlist\LinkedList-Web\bubble.js" defer></script>
