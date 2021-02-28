@@ -298,67 +298,8 @@
 
 			</section>
 
-			<section class="vc_row">
-				<div class="container">
-					<!---	<div class="row">
-
-						<div  class="carousel-container carousel-shadow-active carousel-nav-left carousel-nav-md carousel-dots-style1">
-							<div class="carousel-items row" data-lqd-flickity='{"wrapAround": true}'>
-
-								<div class="lqd-column w-20 text-center px-2">
-									<figure>
-										<img src="./assets/demo/clients/client-8.png" alt="Client">
-									</figure>
-								</div> /.lqd-column w-20 text-center px-2 
-
-								<div class="lqd-column w-20 text-center px-2">
-									<figure>
-										<img src="./assets/demo/clients/client-9.png" alt="Client">
-									</figure>
-								</div><!-- /.lqd-column w-20 text-center px-2
-
-								<div class="lqd-column w-20 text-center px-2">
-									<figure>
-										<img src="./assets/demo/clients/client-10.png" alt="Client">
-									</figure>
-								</div><!-- /.lqd-column w-20 text-center px-2 
-								<div class="lqd-column w-20 text-center px-2">
-									<figure>
-										<img src="./assets/demo/clients/client-11.png" alt="Client">
-									</figure>
-								</div><!-- /.lqd-column w-20 text-center px-2 
-
-								<div class="lqd-column w-20 text-center px-2">
-									<figure>
-										<img src="./assets/demo/clients/client-12.png" alt="Client">
-									</figure>
-								</div><!-- /.lqd-column w-20 text-center px-2 
-
-								<div class="lqd-column w-20 text-center px-2">
-									<figure>
-										<img src="./assets/demo/clients/client-10.png" alt="Client">
-									</figure>
-								</div><!-- /.lqd-column w-20 text-center px-2 
-								<div class="lqd-column w-20 text-center px-2">
-									<figure>
-										<img src="./assets/demo/clients/client-8.png" alt="Client">
-									</figure>
-								</div><!-- /.lqd-column w-20 text-center px-2 
-
-								<div class="lqd-column w-20 text-center px-2">
-									<figure>
-										<img src="./assets/demo/clients/client-9.png" alt="Client">
-									</figure>
-								</div>
-
-							</div>-
-						</div><!-- /.carousel-container -
-
-					</div><!-- /.row -->
-				</div><!-- /.container -->
-			</section><!-- /.vc_row -->
-
-			<section id="about" class="vc_row bg-no-repeat pt-150 pb-150"
+			
+			<section id="about" class="vc_row bg-no-repeat pb-150"
 				style="background-image: url(./assets/demo/bg/bg-76.svg); background-position: -90% 80%;">
 				<div class="container">
 
@@ -528,7 +469,7 @@
 
 					</div><!-- /.row -->
 
-					<div class="lqd-space visible-lg visible-md" style="height: 200px;"></div>
+					<div class="lqd-space visible-lg visible-md" style="height: 100px;"></div>
 
 					<div class="row d-flex flex-wrap align-items-center">
 
@@ -565,6 +506,9 @@
 												data-parallax-from='{"translateY":107}'
 												data-parallax-to='{"translateY":-134}'
 												data-parallax-options='{"overflowHidden":false,"easing":"linear"}'>
+												<figure>
+													<img src="./assets/demo/misc/about_homepage.png" alt="Working with Ave" />
+												</figure>
 
 											</div><!-- /.liquid-img-container-inner -->
 										</div><!-- /.liquid-img-group-img-container -->
@@ -976,7 +920,7 @@
 
 	
 
-	<section class="vc_row bg-no-repeat bg-sm-none pt-90 pb-50"
+	<section class="vc_row bg-no-repeat bg-sm-none pb-50"
 		style="background-image: url(./assets/demo/bg/bg-78.svg); background-position: 12% 35%;">
 		<div class="container">
 
@@ -1141,7 +1085,7 @@
 
 			</div><!-- /.row -->
 
-			<div class="lqd-space visible-md visible-lg" style="height: 400px;"></div>
+			<div class="lqd-space visible-md visible-lg" style="height: 40px;"></div>
 
 		</div><!-- /.container -->
 	</section><!-- /.vc_row pt-90 pb-50 -->
@@ -1258,18 +1202,18 @@
 											<div class="row">
 												<div class="col-xl-6">
 													<div class="input-box">
-														<input type="text" name="name" value="" placeholder="Name"
+														<input type="text" id="name" name="name" value="" placeholder="Name"
 															required="true">
 													</div>
 													<div class="input-box">
-														<input type="text" name="phone" value="" maxlength="10"  pattern="[0-9]{10}"
+														<input type="text" id="phone" name="phone" value="" maxlength="10"  pattern="[0-9]{10}"
 															placeholder="Phone">
 													</div>
 												</div>
 												<div class="col-xl-6">
 													<div class="input-box">
-														<input type="email" name="email" value=""
-															placeholder="Email" required="">
+														<input type="email" id="email" name="email" value=""
+															placeholder="Email" required="true">
 													</div>
 
 												</div>
@@ -1284,14 +1228,15 @@
 										</div>
 										<div class="col-xl-6 col-lg-12">
 											<div class="input-box">
-												<textarea name="message" placeholder="Your Message..."
+												<textarea name="message" id="message"  placeholder="Your Message..."
 													required=""></textarea>
 											</div>
 											<div class="button-box">
-												<input id="form_botcheck" name="form_botcheck" class="form-control"
-													type="hidden" value="">
-												<button onclick="submitFunc()"  data-loading-text="Please wait...">Send
-													Message<span class="flaticon-next"></span></button>
+											
+												<button onclick="submitFunc() ; clearFields()"  data-loading-text="Please wait...">Send
+													Message<span class="flaticon-next" ></span></button>
+													<div id="snackbar">Your message has been sent. You will be notified soon ! </div>
+													
 											</div>
 										</div>
 									</div>
@@ -1463,7 +1408,17 @@
 				})
 
 
-		})}
+		})
+		var x = document.getElementById("snackbar");
+		x.className = "show";
+		setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+	}
+	function clearFields(){
+		document.getElementById("name").value = "";
+		 document.getElementById("phone").value = "";
+		 document.getElementById("email").value = "";
+		 document.getElementById("message").value = "";
+	}
 	
 		</script>
 
