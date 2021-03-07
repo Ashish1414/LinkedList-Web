@@ -58,7 +58,7 @@ function createExplosion(x, y) {
     $explosion.style.top = y + 'px';
    
     // set text - again could put anything in here like the start of an animation 
-    $explosion.innerHTML = "Clicked";
+    $explosion.innerHTML = "";
     
     // add element to dom
     document.body.appendChild($explosion);
@@ -108,7 +108,7 @@ function animateBubbles() {
    const bubbles = generateBubbles(bubbleImages.length);
    const player = just.animate({
       targets: bubbles,
-      to: '5s',
+      to: '10s',
       easing: 'ease-in',
       css: {
          transform() {
