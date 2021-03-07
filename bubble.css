@@ -15,18 +15,19 @@ body {
  .bubble-wrap {
     position: fixed;
     bottom: -13em;
-    overflow: hidden;
+    overflow: hidden !important;
     padding: 3em;
  }
  
  .bubble {
     border-radius: 5em;
     box-shadow: 1px 1px 7px hsla(0, 0, 80%, 0.7);
-    height: 8em;
-    width: 8em;
-    overflow: hidden;
+    height: 6em;
+    width: 6em;
+    /* overflow: hidden; */
     cursor: pointer;
- 
+   background-position: center;
+   background-size: contain;
  }
  
  .bubble.hidden {
@@ -59,7 +60,7 @@ body {
     position: relative;
     width: 90vw;
     margin: 0 auto;
-    overflow: hidden;
+
  }
  
  .bubble-modal.active {

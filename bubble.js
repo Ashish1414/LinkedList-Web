@@ -1,30 +1,14 @@
 const $pause = false;
 // this drives the number of bubbles occurring
 const bubbleImages = [
-   './assets/img/44_kotlin-icon.png',
-   './assets/img/267_Python_logo-512.png',
-   './assets/img/AngularJS-Shield.png',
-   './assets/img/java-60-1174953.png',
-   './assets/img/44_kotlin-icon.png',
-
-   // 'LinkedList-Web\assets\img\267_Python_logo-512.png',
-   // 'LinkedList-Web\assets\img\android-512.png',
-   // 'LinkedList-Web\assets\img\AngularJS-Shield.png',
-   // 'LinkedList-Web\assets\img\java-60-1174953.png',
-   // 'C:\Users\Saloni\Desktop\linkedlist\LinkedList-Web\assets\img\javascript.png',
-   // 'C:\Users\Saloni\Desktop\linkedlist\LinkedList-Web\assets\img\javascript.png',
-   // 'C:\Users\Saloni\Desktop\linkedlist\LinkedList-Web\assets\img\javascript.png',
-   // 'C:\Users\Saloni\Desktop\linkedlist\LinkedList-Web\assets\img\javascript.png',
-   // 'C:\Users\Saloni\Desktop\linkedlist\LinkedList-Web\assets\img\javascript.png',
-
-   // 'https://placeimg.com/200/200/animals',
-   // 'https://placeimg.com/205/200/animals',
-   // 'https://placeimg.com/202/200/animals',
-   // 'https://placeimg.com/201/200/animals',
-   // 'https://placeimg.com/204/200/animals',
-   // 'https://placeimg.com/206/200/animals',
-   // 'https://placeimg.com/208/200/animals',
-   // 'https://placeimg.com/400/400/animals'
+   './assets/img/swift.png',
+   './assets/img/angular-js-512.webp',
+   './assets/img/swift.png',
+   './assets/img/android-flat.png',
+   './assets/img/react1.png',
+   './assets/img/python.png',
+   './assets/img/jav1.png',
+   './assets/img/kotlin.png',
 ];
 
 // x, y cordinates could be proven useful for animating the modal from this location
