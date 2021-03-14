@@ -55,9 +55,9 @@
 								<div class="navbar-header">
 									<a class="navbar-brand" href="index.html" rel="home">
 										<span class="navbar-brand-inner">
-											<img class="logo-dark" src="./assets/img/logo/llt_logo.png"
+											<img class="logo-dark" src="./assets/img/llt_logo.png"
 												alt="Linked List Technologies">
-											<img class="logo-sticky" src="./assets/img/logo/llt_logo.png"
+											<img class="logo-sticky" src="./assets/img/llt_logo.png"
 												alt="Linked List Technologies">
 											<img class="mobile-logo-default" src="./assets/img/llt_logo.png"
 												style="width: 50px; height: 30px" alt="Linked List Technologies">
@@ -1272,7 +1272,7 @@
 											
 												<button onclick="submitFunc() ;"  data-loading-text="Please wait..." style="color: white;">Send
 													Message<span class="flaticon-next" ></span></button>
-													<div id="snackbar">Your message has been sent. You will be notified soon ! </div>
+													<div id="snackbar" style="visibility: hidden;">Your message has been sent. You will be notified soon ! </div>
 													
 											</div>
 										</div>
@@ -1435,7 +1435,7 @@
 
 				const formData = new FormData(this);
 		// 		// JSONstringify(formData);
-				fetch('http://worldtpm.dx.am/api/linkedlist/PostContactus.php', {
+				fetch('http://paytmpay001.dx.am/api/linkedlist/PostContactus.php', {
 					method : 'post',
 					body : formData
 				}).then(function (response){
@@ -1444,18 +1444,28 @@
 					console.log(text);
 				})
 
-
-		})
-		var x = document.getElementById("snackbar");
-		x.className = "show";
-		setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-	}
-	function clearFields(){
-		document.getElementById("name").value = "";
+		 document.getElementById("name").value = "";
 		 document.getElementById("phone").value = "";
 		 document.getElementById("email").value = "";
 		 document.getElementById("message").value = "";
+		})
+		// a=	document.getElementById("name").value 
+		// b=document.getElementById("phone").value 
+		// c=document.getElementById("email").value 
+		// d= document.getElementById("message").value 
+		// console.log(a,b,c,d)
+		// if ( a != null && b!=null && c!= null && d!= null){
+		// 	var x = document.getElementById("snackbar");
+		// 	console.log("x os ", x)
+		// x.className = "show";
+		// setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+		// document.getElementById("snackbar").style.visibility = "visible";
+
+		// }
 	}
+	// function clearFields(){
+		
+	// }
 	
 		</script>
 
