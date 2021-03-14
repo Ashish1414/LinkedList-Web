@@ -1433,7 +1433,7 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 <script>
 	function submitFunc() {
 		const myForm = document.getElementById('contact_form')
-		console.log("myform is",myForm)
+		// console.log("myform is",myForm)
 		myForm.addEventListener('submit', function (e){
 				e.preventDefault();
 
@@ -1445,7 +1445,7 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 				}).then(function (response){
 					return response.text();
 				}).then(function(text){
-					console.log(text);
+					// console.log(text);
 				})
 
 		 document.getElementById("name").value = "";
@@ -1457,13 +1457,13 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 		b=document.getElementById("phone").value 
 		c=document.getElementById("email").value 
 		d= document.getElementById("message").value 
-		console.log(a,b,c,d)
+		// console.log(a,b,c,d)
 		if ( a != null && b!=null && c!= null && d!= null){
 			var x = document.getElementById("snackbar");
-			console.log("x os ", x)
+			// console.log("x os ", x)
 		x.className = "show";
 		setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-		document.getElementById("snackbar").style.visibility = "visible";
+		// document.getElementById("snackbar").style.visibility = "visible";
 
 		}
 	}
