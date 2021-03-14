@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="theme-color" content="#3ed2a7">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
 	<link rel="shortcut icon" href="./favicon.png" />
 
@@ -1449,19 +1450,19 @@
 		 document.getElementById("email").value = "";
 		 document.getElementById("message").value = "";
 		})
-		// a=	document.getElementById("name").value 
-		// b=document.getElementById("phone").value 
-		// c=document.getElementById("email").value 
-		// d= document.getElementById("message").value 
-		// console.log(a,b,c,d)
-		// if ( a != null && b!=null && c!= null && d!= null){
-		// 	var x = document.getElementById("snackbar");
-		// 	console.log("x os ", x)
-		// x.className = "show";
-		// setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-		// document.getElementById("snackbar").style.visibility = "visible";
+		a=	document.getElementById("name").value 
+		b=document.getElementById("phone").value 
+		c=document.getElementById("email").value 
+		d= document.getElementById("message").value 
+		console.log(a,b,c,d)
+		if ( a != null && b!=null && c!= null && d!= null){
+			var x = document.getElementById("snackbar");
+			console.log("x os ", x)
+		x.className = "show";
+		setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+		document.getElementById("snackbar").style.visibility = "visible";
 
-		// }
+		}
 	}
 	// function clearFields(){
 		
