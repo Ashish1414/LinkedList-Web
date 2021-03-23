@@ -5,13 +5,6 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-	<!-- <script type="text/javascript">
-	console.log("in functon............")
-		$(document).ready(function(){       
-		$('#myModal').modal('show');
-		 }); 
-	</script>
-	 -->
 <script type="text/javascript" src="floating-wpp.min.js"></script>
 <link rel="stylesheet" href="floating-wpp.min.css">
 
@@ -64,26 +57,19 @@
 
 <body data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="modern"
 	data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
-	<!-- <div id="myModal" class="modal fade" role="dialog">
-		<div class="modal-dialog">
-	
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <button type="button" class="close" data-dismiss="modal">&times;</button>
-			  
-			</div>
-			<div class="modal-body text-center">
-			  <h1>Full screen Transparent Bootstrap Modal</h1>
-			  <p>FEEL FRREE TO GET YOUR MODAL CODE HERE FOLKS.</p>
-			  <a class="pre-order-btn" href="#">GET THE MODAL CODE</a>
-			</div>
-			<div class="modal-footer">
-			 
-			</div>
-		  </div>
-	  
-		</div>
-	  </div> -->
+	<!-- Trigger/Open The Modal -->
+	<div>
+		<!-- The Modal -->
+<div id="myModalll" class="modalll">
+
+	<!-- Modal content -->
+	<div class="modal-contentt">
+	  <span class="close">&times;</span>
+	  <p>Some text in the Modal..</p>
+	</div>
+  
+  </div>
+	</div>
 
 
 	<div id="wrap">
@@ -1430,10 +1416,7 @@
 							<!-- <li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li> -->
 						</ul>
 						<a href="https://wa.me/919716838625/?text=Hey there!! "> 
-							<i class="fa fa-whatsapp my-float" style="position: fixed;
-							top: 50%;
-
-							z-index: 100;"></i>
+							<i class="fa fa-whatsapp my-float" ></i>
 									</a>
 
 					</div><!-- /.lqd-column col-md-5 -->
@@ -1445,12 +1428,13 @@
 
 	</div><!-- /#wrap -->
 
-	
+	<script src="./assets/vendors/jquery.min.js"></script>
 	<script src="./assets/js/theme-vendors.js"></script>
 	<script src="./assets/js/theme.min.js"></script>
 	<script src="./assets/js/liquidAjaxMailchimp.min.js"></script>
 <script>
 
+	
 	function submitFunc() {
 		const myForm = document.getElementById('contact_form')
 		// console.log("myform is",myForm)

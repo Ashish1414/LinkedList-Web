@@ -5,13 +5,6 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-	<!-- <script type="text/javascript">
-	console.log("in functon............")
-		$(document).ready(function(){       
-		$('#myModal').modal('show');
-		 }); 
-	</script>
-	 -->
 <script type="text/javascript" src="floating-wpp.min.js"></script>
 <link rel="stylesheet" href="floating-wpp.min.css">
 
@@ -64,27 +57,6 @@
 
 <body data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="modern"
 	data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
-	<!-- <div id="myModal" class="modal fade" role="dialog">
-		<div class="modal-dialog">
-	
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <button type="button" class="close" data-dismiss="modal">&times;</button>
-			  
-			</div>
-			<div class="modal-body text-center">
-			  <h1>Full screen Transparent Bootstrap Modal</h1>
-			  <p>FEEL FRREE TO GET YOUR MODAL CODE HERE FOLKS.</p>
-			  <a class="pre-order-btn" href="#">GET THE MODAL CODE</a>
-			</div>
-			<div class="modal-footer">
-			 
-			</div>
-		  </div>
-	  
-		</div>
-	  </div> -->
-
 
 	<div id="wrap">
 
@@ -655,16 +627,21 @@
 
 			<!--<section id="services" class="vc_row pt-90 pb-90 bg-no-repeat" style="background-image: url(./assets/demo/bg/bg-77.svg); background-position: 500% 0%;">
 				<div class="container">
+
 					<div class="row d-flex flex-wrap align-items-center">
+
 						<div
 						class="lqd-column col-md-5 mb-30"
 						data-custom-animations="true"
 						data-ca-options='{"triggerHandler":"inview", "animationTarget":"all-childs", "duration":"1600", "delay":"160", "easing":"easeOutQuint", "direction":"forward", "initValues":{"translateY":30, "opacity":0}, "animations":{"translateY":0, "opacity":1}}'>
+
 							<header class="fancy-title pr-md-4">
 								<h6 class="text-uppercase">Services</h6>
 								<h2><strong>Best solutions</strong> for you</h2>
 							</header>
+
 							<p class="font-size-18 lh-15 mb-55">We provide digital experience services to startups and small businesses to looking for a partner of their digital media, design & development, lead generation and communications requirents. We work with you, not for you. Although we have a great resources</p>
+
 							<a
 							href="#"
 							class="btn btn-solid text-uppercase btn-md circle btn-bordered border-thin btn-gradient font-weight-bold px-2"
@@ -684,16 +661,20 @@
 									</svg>
 								</span>
 							</a>
+
 						</div><!-- /.lqd-column col-md-5 
+
 						<div
 						class="lqd-column col-md-3 col-md-offset-1"
 						>
+
 							<div
 							class="lqd-column-inner"
 							data-parallax="true"
 							data-parallax-from='{"translateY":-30}'
 							data-parallax-to='{"translateY":120}'
 							data-parallax-options='{"duration":"2000", "easing":"linear", "reverse":true, "triggerHook":"onEnter", "overflowHidden": false}'>
+
 								<div class="iconbox text-left iconbox-round iconbox-lg iconbox-filled iconbox-filled iconbox-filled-hover iconbox-icon-image iconbox-shadow pt-50 pb-40">
 									<div class="iconbox-icon-wrap">
 										<span class="iconbox-icon-container mb-35">
@@ -741,13 +722,16 @@
 
 	</div>
 	<!-- /.lqd-column col-md-3 
+
 						<div class="lqd-column col-md-3">
+
 							<div
 							class="lqd-column-inner"
 							data-parallax="true"
 							data-parallax-from='{"translateY":50}'
 							data-parallax-to='{"translateY":-130}'
 							data-parallax-options='{"duration":"2000", "easing":"linear", "reverse":true, "triggerHook":"onEnter", "overflowHidden": false}'>
+
 								<div class="iconbox text-left iconbox-round iconbox-lg iconbox-filled iconbox-filled iconbox-filled-hover iconbox-icon-image iconbox-shadow pt-50 pb-40">
 									<div class="iconbox-icon-wrap">
 										<span class="iconbox-icon-container mb-35">
@@ -769,6 +753,7 @@
 									</div><!-- /.contents -->
 	</div>
 	<!-- /.iconbox 
+
 								<div class="iconbox text-left iconbox-round iconbox-lg iconbox-filled iconbox-filled iconbox-filled-hover iconbox-icon-image iconbox-shadow pt-50 pb-40">
 									<div class="iconbox-icon-wrap">
 										<span class="iconbox-icon-container mb-35">
@@ -794,11 +779,17 @@
 
 	</div>
 	<!-- /.lqd-column col-md-3 
+
 					</div><!-- /.row 
+
 					<div class="lqd-space visible-lg visible-md- mb-200"></div>
+
 					<div id="works" class="row">
+
 						<div class="lqd-column col-md-12">
+
 							<div class="liquid-portfolio-list">
+
 								<div class="row d-flex flex-wrap align-items-end mb-40">
 									<div class="col-md-6">
 										<header class="fancy-title mb-0">
@@ -820,12 +811,14 @@
 	</div><!-- /.col-md-6 -->
 	</div>
 	<!-- /.row 
+
 								<div
 								class="row liquid-portfolio-list-row"
 								data-liquid-masonry="true"
 								data-masonry-options='{ "filtersID": "#seo-pf-grid" }'
 								data-custom-animations="true"
 								data-ca-options='{"triggerHandler":"inview","animationTarget":".ld-pf-item","animateTargetsWhenVisible":"true","duration":"1600","delay":"160","easing":"easeOutQuint","initValues":{"translateY":65,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
+
 									<div class="col-md-4 col-sm-6 col-xs-12 masonry-item branding digital-design grid-hover-overlay">
 										<article class="ld-pf-item ld-pf-dark pf-bg-shadow pf-details-visible pf-details-boxed pf-details-pull-right pf-details-pull-up-half title-size-24 pf-details-h-str pf-details-v-end post-2021 liquid-portfolio type-liquid-portfolio status-publish format-gallery has-post-thumbnail hentry post_format-post-format-gallery liquid-portfolio-category-branding liquid-portfolio-category-digital-design liquid-portfolio-category-grid-hover-overlay">
 											<div class="ld-pf-inner">
@@ -849,6 +842,7 @@
 	</article>
 	</div>
 	<!-- /.col-md-4 
+
 									<div class="col-md-4 col-sm-6 col-xs-12 masonry-item branding custom-print grid-hover-overlay">
 										<article class="ld-pf-item ld-pf-dark pf-bg-shadow pf-details-visible pf-details-boxed pf-details-pull-right pf-details-pull-up-half title-size-24 pf-details-h-str pf-details-v-end post-2021 liquid-portfolio type-liquid-portfolio status-publish format-gallery has-post-thumbnail hentry post_format-post-format-gallery liquid-portfolio-category-branding liquid-portfolio-category-digital-design liquid-portfolio-category-grid-hover-overlay">
 											<div class="ld-pf-inner">
@@ -872,6 +866,7 @@
 	</article>
 	</div>
 	<!-- /.col-md-4
+
 									<div class="col-md-4 col-sm-6 col-xs-12 masonry-item ecommerce grid-hover-overlay">
 										<article class="ld-pf-item ld-pf-dark pf-bg-shadow pf-details-visible pf-details-boxed pf-details-pull-right pf-details-pull-up-half title-size-24 pf-details-h-str pf-details-v-end post-2021 liquid-portfolio type-liquid-portfolio status-publish format-gallery has-post-thumbnail hentry post_format-post-format-gallery liquid-portfolio-category-branding liquid-portfolio-category-digital-design liquid-portfolio-category-grid-hover-overlay">
 											<div class="ld-pf-inner">
@@ -895,6 +890,7 @@
 	</article>
 	</div>
 	<!-- /.col-md-4 
+
 									<div class="col-md-4 col-sm-6 col-xs-12 masonry-item digital-design grid-hover-overlay">
 										<article class="ld-pf-item ld-pf-dark pf-bg-shadow pf-details-visible pf-details-boxed pf-details-pull-right pf-details-pull-up-half title-size-24 pf-details-h-str pf-details-v-end post-2021 liquid-portfolio type-liquid-portfolio status-publish format-gallery has-post-thumbnail hentry post_format-post-format-gallery liquid-portfolio-category-branding liquid-portfolio-category-digital-design liquid-portfolio-category-grid-hover-overlay">
 											<div class="ld-pf-inner">
@@ -918,6 +914,7 @@
 	</article>
 	</div>
 	<!-- /.col-md-4 
+
 									<div class="col-md-4 col-sm-6 col-xs-12 masonry-item custom-print digital-design grid-hover-overlay">
 										<article class="ld-pf-item ld-pf-dark pf-bg-shadow pf-details-visible pf-details-boxed pf-details-pull-right pf-details-pull-up-half title-size-24 pf-details-h-str pf-details-v-end post-2021 liquid-portfolio type-liquid-portfolio status-publish format-gallery has-post-thumbnail hentry post_format-post-format-gallery liquid-portfolio-category-branding liquid-portfolio-category-digital-design liquid-portfolio-category-grid-hover-overlay">
 											<div class="ld-pf-inner">
@@ -941,6 +938,7 @@
 	</article>
 	</div>
 	<!-- /.col-md-4 
+
 									<div class="col-md-4 col-sm-6 col-xs-12 masonry-item branding digital-design grid-hover-overlay">
 										<article class="ld-pf-item ld-pf-dark pf-bg-shadow pf-details-visible pf-details-boxed pf-details-pull-right pf-details-pull-up-half title-size-24 pf-details-h-str pf-details-v-end post-2021 liquid-portfolio type-liquid-portfolio status-publish format-gallery has-post-thumbnail hentry post_format-post-format-gallery liquid-portfolio-category-branding liquid-portfolio-category-digital-design liquid-portfolio-category-grid-hover-overlay">
 											<div class="ld-pf-inner">
@@ -965,9 +963,13 @@
 									</div><!-- /.col-md-4 
 									
 								</div><!-- /.row 
+
 							</div><!-- /.liquid-portfolio-list 
+
 						</div><!-- /.lqd-column col-md-12 
+
 					</div><!-- /.row 
+
 				</div><!-- /.container 
 			</section><!-- /.vc_row pt-90 pb-90 -->
 
@@ -1393,10 +1395,7 @@
 
 					</div><!-- /.col-md-3 -->
 
-					<div class="lqd-column col-md-3 col-xs-6 mb-30">
-
-
-						
+					<div class="lqd-column col-md-3 col-xs-6 mb-30"></div>
 
 					</div><!-- /.col-md-3 -->
 
@@ -1430,10 +1429,7 @@
 							<!-- <li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li> -->
 						</ul>
 						<a href="https://wa.me/919716838625/?text=Hey there!! "> 
-							<i class="fa fa-whatsapp my-float" style="position: fixed;
-							top: 50%;
-
-							z-index: 100;"></i>
+							<i class="fa fa-whatsapp my-float" ></i>
 									</a>
 
 					</div><!-- /.lqd-column col-md-5 -->
@@ -1445,12 +1441,12 @@
 
 	</div><!-- /#wrap -->
 
-	
+	<script src="./assets/vendors/jquery.min.js"></script>
 	<script src="./assets/js/theme-vendors.js"></script>
 	<script src="./assets/js/theme.min.js"></script>
 	<script src="./assets/js/liquidAjaxMailchimp.min.js"></script>
 <script>
-
+	
 	function submitFunc() {
 		const myForm = document.getElementById('contact_form')
 		// console.log("myform is",myForm)
