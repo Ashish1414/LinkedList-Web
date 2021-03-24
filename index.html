@@ -54,6 +54,24 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 
 <body data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="modern"
 	data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
+	
+
+	<!-- <div id="modalOverlay">
+		<div class="modalPopup">
+			<div class="headerBar">
+				<img src="https://placehold.it/200x25/edcb04/333333/?text=LOGO" alt="Logo">
+			</div>
+			<div class="modalContent">
+					<h1>Modal window title here</h1>
+					 <p>Modal appears on page load, presents information and is dismissed after the "Close" button is clicked. Styled modal messaging, images and other information here.</p>
+					 <button class="buttonStyle" id="button">Close</button>
+			</div>
+		</div>
+	</div> -->
+  <!--p class="returnToProfile"><a href="https://codepen.io/ptamaro" target="_parent">Return to profile</a></p-->
+
+
+
 
 	<div id="wrap">
 
@@ -998,7 +1016,7 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 
 				<div class="lqd-column col-md-8">
 
-					<div class="lqd-space visible-md visible-lg" style="height: 400px;"></div>
+					<div class="lqd-space visible-md visible-lg" style="height: 200px;"></div>
 
 					<div class="row">
 						<div class="lqd-column col-md-9 text-center">
@@ -1365,7 +1383,7 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 					<div class="lqd-column col-md-3 col-xs-6 mb-30">
 
 						<!-- <h3 class="widget-title">Main Navigation</h3> -->
-						<ul class="lqd-custom-menu reset-ul font-size-14 lh-2">
+						<ul class="lqd-custom-menu reset-ul font-size-14 lh-2" style="margin-top: 20px;">
 							<li><a href="#">Homepage</a></li>
 							<li><a href="services.html">Our Services</a></li>
 							<li><a href="about.html">About Us</a></li>
@@ -1374,7 +1392,7 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 
 					</div><!-- /.col-md-3 -->
 
-					<div class="lqd-column col-md-3 col-xs-6 mb-30">
+					<div class="lqd-column col-md-3 col-xs-6 mb-30"  style="margin-top: 20px;">
 						<ul class="lqd-custom-menu reset-ul font-size-14 lh-2">
 							<li><a href="services.html">Web Design</a></li>
 							<li><a href="services.html">Mobile App Design</a></li>
@@ -1422,16 +1440,15 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 
 					<div class="lqd-column col-md-5 text-md-right">
 
-						<ul class="social-icon social-icon-md mb-25">
+						<ul class="social-icon social-icon-md mb-25"  style="margin-top: 20px;">
 							<li><a href="https://www.facebook.com/Linked-List-Technologies-103863965073250" target="_blank"><i class="fa fa-facebook"></i></a></li>
 							<li><a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFhyF2um5Ee4QAAAXe-nP9AYpJS6CzigtonBbcLlaGhN5gngfpI7KRTxqxMnEtdvcOiC0e8-JS0PobmnwKF028yIh72-1E3KVK5j63JuAvWY6y5EMiZNWCmAfAALPcszB9iw3s=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Flinked-list-technologies" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 							<li><a href="https://www.instagram.com/linkedlist.tech/?igshid=6eirxml16nop" target="_blank"><i class="fa fa-instagram"></i></a></li>
 							<!-- <li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li> -->
 						</ul>
 						<a href="https://wa.me/919716838625/?text=Hey there!! "> 
-							<i class="fa fa-whatsapp my-float" style="position: fixed;
-							top: 50%;
-
+							<i class="fa fa-whatsapp my-float" style="position: fixed; bottom: 10px ; right: 10px;
+						
 							z-index: 100;"></i>
 									</a>
 
@@ -1450,6 +1467,13 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 	<script src="./assets/js/theme.min.js"></script>
 	<script src="./assets/js/liquidAjaxMailchimp.min.js"></script>
 <script>
+
+
+window.onload = function() {
+  document.getElementById('button').onclick = function() {
+    document.getElementById('modalOverlay').style.display = 'none'
+  };
+};
 	function submitFunc() {
 		const myForm = document.getElementById('contact_form')
 		// console.log("myform is",myForm)

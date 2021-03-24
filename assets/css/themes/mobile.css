@@ -101,8 +101,8 @@ body {
   padding-top: 150px;
 }
 
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
   .main-footer > section:first-child {
     padding-top: 400px;
   }
-}
+} */
