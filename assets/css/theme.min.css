@@ -21669,7 +21669,7 @@ body.search .no-results .search-form input[type="submit"] {
 }
 
 .text-white {
-  color: #fff !important;
+  color: #000 !important;
 }
 
 .text-black {
