@@ -37,14 +37,28 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 	<script>
 	gtag('event', 'conversion', {'send_to': 'AW-406154720/dGhICOm87PoBEODb1cEB'});
 	</script>
+
+<!--	<script>-->
+<!--	-->
+<!--	</script>-->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJDDMEKSCP"></script>
+
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-WJDDMEKSCP');
+
+
+  function closemodal(e){
+
+	  e.stopPropagation()
+	  console.log("in the fucntion modall ")
+	  document.getElementById('modalOverlay').style.display='none'
+  }
 </script>
 
 	<!-- Head Libs -->
@@ -54,31 +68,58 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 
 <body data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="modern"
 	data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
+
 	
 
-	<!-- <div id="modalOverlay">
-		<div class="modalPopup">
-			<div class="headerBar">
-				<img src="https://placehold.it/200x25/edcb04/333333/?text=LOGO" alt="Logo">
-			</div>
+	<div id="modalOverlay"  style="display: none;"  onclick="closemodal(event)">
+		<div class="modalPopup" onclick="event.stopPropagation()">
+		
 			<div class="modalContent">
-					<h1>Modal window title here</h1>
-					 <p>Modal appears on page load, presents information and is dismissed after the "Close" button is clicked. Styled modal messaging, images and other information here.</p>
-					 <button class="buttonStyle" id="button">Close</button>
+				<div class="container_modal">
+					<form id="contact_form" name="contact_form">
+						<ul>
+							<li>
+								<label for="name"><span>Name <span class="required-star">*</span></span></label>
+								<input type="text" id="name" name="name">
+							</li>
+							<li>
+								<label for="phone"><span>Phone <span class="required-star">*</span></span></label>
+								<input type="text" id="phone" name="phone">
+							</li>
+							<li>
+								<label for="mail"><span>Email <span class="required-star">*</span></span></label>
+								<input type="email" id="mail" name="email">
+							</li>
+							<li>
+								<label for="msg"><span>Message</span></label>
+								<textarea name="message" id="message" rows="4" cols="50"></textarea>
+							</li>
+							<li class="button-box">
+								<button onclick="submitFunc() ;closemodal(event);"  data-loading-text="Please wait..." style="color: white; background-color: #fe506c">Send
+									Message<span class="flaticon-next" ></span></button>
+							</li>
+						</ul>
+					</form>
+					
+				</div>
+				
+					<!-- <h1>Modal window title here</h1>
+					 <p>Modal appears on page load, presents information and is dismissed after the "Close" button is clicked. Styled modal messaging, images and other information here.</p> -->
+					 <!-- <button class="buttonStyle" id="button">Close</button> -->
 			</div>
 		</div>
-	</div> -->
+	</div> 
   <!--p class="returnToProfile"><a href="https://codepen.io/ptamaro" target="_parent">Return to profile</a></p-->
 
 
 
 
-	<div id="wrap">
+	 <div id="wrap">
 
 		<header class="main-header main-header-overlay">
 
 			<div class="mainbar-wrap">
-				<div class="megamenu-hover-bg"></div><!-- /.megamenu-hover-bg -->
+				<div class="megamenu-hover-bg"></div>
 				<div class="container-fluid mainbar-container">
 					<div class="mainbar">
 						<div class="row mainbar-row align-items-lg-stretch px-4">
@@ -1466,17 +1507,19 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 	<script src="./assets/js/theme-vendors.js"></script>
 	<script src="./assets/js/theme.min.js"></script>
 	<script src="./assets/js/liquidAjaxMailchimp.min.js"></script>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+
 <script>
 
-
 window.onload = function() {
-  document.getElementById('button').onclick = function() {
-    document.getElementById('modalOverlay').style.display = 'none'
-  };
+	setTimeout(function() {
+    document.getElementById('modalOverlay').style.display = 'block'
+    }, 8000);
+
 };
 	function submitFunc() {
 		const myForm = document.getElementById('contact_form')
-		// console.log("myform is",myForm)
+		console.log("myform is",myForm)
 		myForm.addEventListener('submit', function (e){
 				e.preventDefault();
 
@@ -1515,6 +1558,18 @@ window.onload = function() {
 	// }
 	
 		</script>
+
+<script>
+	// Get the modal
+	var modal = document.getElementById('id01');
+	
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+		modal.style.display = "none";
+	  }
+	}
+	</script>
 
 	
 </body>
