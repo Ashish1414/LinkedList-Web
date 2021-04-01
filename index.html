@@ -76,7 +76,7 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 		
 			<div class="modalContent">
 				<div class="container_modal">
-					<form id="contact_form" name="contact_form">
+					<form id="contact_form_modal" name="contact_form">
 						<ul>
 							<li>
 								<label for="name"><span>Name <span class="required-star">*</span></span></label>
@@ -95,7 +95,7 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 								<textarea name="message" id="message" rows="4" cols="50"></textarea>
 							</li>
 							<li class="button-box">
-								<button onclick="submitFunc() ;closemodal(event);"  data-loading-text="Please wait..." style="color: white; background-color: #fe506c">Send
+								<button onclick="submitFuncModal() ;closemodal(event);"  data-loading-text="Please wait..." style="color: white; background-color: #fe506c">Send
 									Message<span class="flaticon-next" ></span></button>
 							</li>
 						</ul>
@@ -1553,8 +1553,48 @@ window.onload = function() {
 
 		}
 	}
+
+
+
+
+	function submitFuncModal() {
+		const myForm = document.getElementById('contact_form_modal')
+		console.log("myform is",myForm)
+		myForm.addEventListener('submit', function (e){
+				e.preventDefault();
+
+				const formData = new FormData(this);
+		// 		// JSONstringify(formData);
+				fetch('https://api.tpmworldservices.com/api/llcontactus/', {
+					method : 'post',
+					body : formData
+				}).then(function (response){
+					return response.text();
+				}).then(function(text){
+					// console.log(text);
+				})
+
+		 document.getElementById("name").value = "";
+		 document.getElementById("phone").value = "";
+		 document.getElementById("email").value = "";
+		 document.getElementById("message").value = "";
+		})
+		a=	document.getElementById("name").value 
+		b=document.getElementById("phone").value 
+		c=document.getElementById("email").value 
+		d= document.getElementById("message").value 
+		// console.log(a,b,c,d)
+		if ( a != null && b!=null && c!= null && d!= null){
+			var x = document.getElementById("snackbar");
+			// console.log("x os ", x)
+		x.className = "show";
+		setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+		// document.getElementById("snackbar").style.visibility = "visible";
+
+		}
+	}
 	// function clearFields(){
-		
+
 	// }
 	
 		</script>
@@ -1562,7 +1602,7 @@ window.onload = function() {
 <script>
 	// Get the modal
 	var modal = document.getElementById('id01');
-	
+
 	// When the user clicks anywhere outside of the modal, close it
 	window.onclick = function(event) {
 	  if (event.target == modal) {
