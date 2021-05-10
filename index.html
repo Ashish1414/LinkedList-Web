@@ -24,6 +24,7 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 	<link rel="stylesheet" href="assets/css/theme-vendors.min.css" />
 	<link rel="stylesheet" href="assets/css/theme.min.css" />
 	<link rel="stylesheet" href="assets/css/themes/seo.css" />
+	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- Global site tag (gtag.js) - Google Ads: 406154720 -->
 	
 	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-406154720"></script>
@@ -64,37 +65,61 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 	<!-- Head Libs -->
 	<script async src="assets/vendors/modernizr.min.js"></script>
 	<style>
-	#contact_form_modal input:focus,#contact_form_modal textarea:focus{
-  		outline: none;
+#contact_form_modal input:focus,#contact_form_modal textarea:focus{
+outline: none;
+}
+#contact_form_modal button{
+  border: none;
+  padding: 5px;
+}
+#contact_form input,#contact_form textarea{
+    outline: none;
+  border: none!important;
+  color: 	#b7b9c4!important;
+}
+#contact_form input:focus,#contact_form textarea:focus{
+    color: black!important;
+}
+.ld-flipbox-wrap .bg-gradient-primary-br{
+  background: white!important;
+}
+.ld-flipbox-wrap .contents{
+  color: black!important;
+}
+.text{
+  font-size: 18px;
+  top: 45%;
+}
+.whatsapp{
+  transition: 1.2s;
+}
+.whatsapp:hover{
+  transform: translateY(-20px);
+}
+@media(max-width:420px){
+    #contact_form input{
+        /* width: 150px!important; */
+		font-size: 15px;
+    }
+	#contact_form button{
+		margin-top: 10px;
+		font-size: 30px;
 	}
-	#contact_form_modal button{
-		border: none;
-		padding: 5px;
+	#contact_form{
+		width: 325px;
+		/* padding-left: 0px; */
 	}
-	#contact_form input,#contact_form textarea{
-  		outline: none;
-		border: none!important;
-		color: 	#b7b9c4!important;
+	.contact-form{
+		box-shadow: none;
+		padding:0px;
 	}
-	#contact_form input:focus,#contact_form textarea:focus{
-  		color: black!important;
+	.fancy-title p{
+		font-size: 14px;
 	}
-	.ld-flipbox-wrap .bg-gradient-primary-br{
-		background: white!important;
+	.contact-footer{
+		font-size: 14px;
 	}
-	.ld-flipbox-wrap .contents{
-		color: black!important;
-	}
-	.text{
-		font-size: 18px;
-		top: 45%;
-	}
-	.whatsapp{
-		transition: 1.2s;
-	}
-	.whatsapp:hover{
-		transform: translateY(-20px);
-	}
+}
 	</style>
 </head>
 
@@ -457,7 +482,7 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 
 							<header class="fancy-title">
 								<h6 class="text-uppercase">How it works</h6>
-								<h2><strong>Simple process</strong> to start</h2>
+								<!-- <h2><strong>Simple process</strong> to start</h2> -->
 							</header>
 
 						</div><!-- /.lqd-column col-md-12 -->
@@ -1554,7 +1579,7 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 												<textarea cols="10" rows="6" id="message" name="message" aria-required="true" aria-invalid="false" placeholder="Message" required></textarea>
 											</div><!-- /.col-md-12 -->
 											<div class="lqd-column col-md-6">
-												<p class="font-size-16 opacity-07"><em>We all know how important your information is. They are always safe with us.</em></p>
+												<p class="font-size-16 opacity-07 contact-footer"><em>We all know how important your information is. They are always safe with us.</em></p>
 											</div><!-- /.col-md-6 -->
 											<div class="lqd-column col-md-6 text-md-right">
 												<button type="submit" onclick="submitFunc() ;"  data-loading-text="Please wait..." class="font-size-13 ltr-sp-1 font-weight-bold" style="color: white;">

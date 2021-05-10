@@ -1,0 +1,31 @@
+#contact_form_modal input:focus,#contact_form_modal textarea:focus{
+    outline: none;
+}
+#contact_form_modal button{
+  border: none;
+  padding: 5px;
+}
+#contact_form input,#contact_form textarea{
+    outline: none;
+  border: none!important;
+  color: 	#b7b9c4!important;
+}
+#contact_form input:focus,#contact_form textarea:focus{
+    color: black!important;
+}
+.ld-flipbox-wrap .bg-gradient-primary-br{
+  background: white!important;
+}
+.ld-flipbox-wrap .contents{
+  color: black!important;
+}
+.text{
+  font-size: 18px;
+  top: 45%;
+}
+.whatsapp{
+  transition: 1.2s;
+}
+.whatsapp:hover{
+  transform: translateY(-20px);
+}
