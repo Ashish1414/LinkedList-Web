@@ -24,6 +24,7 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 	<link rel="stylesheet" href="assets/css/theme-vendors.min.css" />
 	<link rel="stylesheet" href="assets/css/theme.min.css" />
 	<link rel="stylesheet" href="assets/css/themes/seo.css" />
+	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- Global site tag (gtag.js) - Google Ads: 406154720 -->
 	
 	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-406154720"></script>
@@ -64,37 +65,61 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 	<!-- Head Libs -->
 	<script async src="assets/vendors/modernizr.min.js"></script>
 	<style>
-	#contact_form_modal input:focus,#contact_form_modal textarea:focus{
-  		outline: none;
+#contact_form_modal input:focus,#contact_form_modal textarea:focus{
+outline: none;
+}
+#contact_form_modal button{
+  border: none;
+  padding: 5px;
+}
+#contact_form input,#contact_form textarea{
+    outline: none;
+  border: none!important;
+  color: 	#b7b9c4!important;
+}
+#contact_form input:focus,#contact_form textarea:focus{
+    color: black!important;
+}
+.ld-flipbox-wrap .bg-gradient-primary-br{
+  background: white!important;
+}
+.ld-flipbox-wrap .contents{
+  color: black!important;
+}
+.text{
+  font-size: 18px;
+  top: 45%;
+}
+.whatsapp{
+  transition: 1.2s;
+}
+.whatsapp:hover{
+  transform: translateY(-20px);
+}
+@media(max-width:420px){
+    #contact_form input{
+        /* width: 150px!important; */
+		font-size: 15px;
+    }
+	#contact_form button{
+		margin-top: 10px;
+		font-size: 30px;
 	}
-	#contact_form_modal button{
-		border: none;
-		padding: 5px;
+	#contact_form{
+		width: 325px;
+		/* padding-left: 0px; */
 	}
-	#contact_form input,#contact_form textarea{
-  		outline: none;
-		border: none!important;
-		color: 	#b7b9c4!important;
+	.contact-form{
+		box-shadow: none;
+		padding:0px;
 	}
-	#contact_form input:focus,#contact_form textarea:focus{
-  		color: black!important;
+	.fancy-title p{
+		font-size: 14px;
 	}
-	.ld-flipbox-wrap .bg-gradient-primary-br{
-		background: white!important;
+	.contact-footer{
+		font-size: 14px;
 	}
-	.ld-flipbox-wrap .contents{
-		color: black!important;
-	}
-	.text{
-		font-size: 18px;
-		top: 45%;
-	}
-	.whatsapp{
-		transition: 1.2s;
-	}
-	.whatsapp:hover{
-		transform: translateY(-20px);
-	}
+}
 	</style>
 </head>
 
@@ -174,8 +199,6 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 		</div>
 	</div> 
   <!--p class="returnToProfile"><a href="https://codepen.io/ptamaro" target="_parent">Return to profile</a></p-->
-
-
 
 
 	 <div id="wrap">
@@ -266,8 +289,8 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 												</span>
 											</a>
 										</li>
-										<!-- <li>
-											<a href="#works">
+										<li>
+											<a href="careers.html">
 												<span class="link-icon"></span>
 												<span class="link-txt">
 													<span class="link-ext"></span>
@@ -279,7 +302,7 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 													</span>
 												</span>
 											</a>
-										</li> -->
+										</li>
 										<li>
 											<a href="#contactUs">
 												<span class="link-icon"></span>
@@ -459,7 +482,7 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 
 							<header class="fancy-title">
 								<h6 class="text-uppercase">How it works</h6>
-								<h2><strong>Simple process</strong> to start</h2>
+								<!-- <h2><strong>Simple process</strong> to start</h2> -->
 							</header>
 
 						</div><!-- /.lqd-column col-md-12 -->
@@ -711,8 +734,8 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 											</span>
 										</div><!-- /.iconbox-icon-wrap -->
 										<div class="contents">
-											<h3 class="font-weight-semibold">Huge Collection</h3>
-											<p class="font-size-16 lh-165 text-fade-dark-04">The latest design trends meet hand-crafted templates in Ave Collection.</p>
+											<!-- <h3 class="font-weight-semibold">Huge Collection</h3> -->
+											<!-- <p class="font-size-16 lh-165 text-fade-dark-04">The latest design trends meet hand-crafted templates in Ave Collection.</p> -->
 										</div>
 		
 									</div><!-- /.iconbox -->
@@ -734,8 +757,8 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 											</span>
 										</div><!-- /.iconbox-icon-wrap -->
 										<div class="contents">
-											<h3 class="font-weight-semibold">Next-Gen Online Store</h3>
-											<p class="font-size-16 lh-165 text-fade-dark-04">Open a beautiful store, increase your conversion rates and boost your sales.</p>
+											<!-- <h3 class="font-weight-semibold">Next-Gen Online Store</h3> -->
+											<!-- <p class="font-size-16 lh-165 text-fade-dark-04">Open a beautiful store, increase your conversion rates and boost your sales.</p> -->
 										</div>
 		
 									</div><!-- /.iconbox -->
@@ -757,8 +780,8 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 											</span>
 										</div><!-- /.iconbox-icon-wrap -->
 										<div class="contents">
-											<h3 class="font-weight-semibold">AI-Powered Support</h3>
-											<p class="font-size-16 lh-165 text-fade-dark-04">Support, makes your experience faster and more accurate than ever.</p>
+											<!-- <h3 class="font-weight-semibold">AI-Powered Support</h3> -->
+											<!-- <p class="font-size-16 lh-165 text-fade-dark-04">Support, makes your experience faster and more accurate than ever.</p> -->
 										</div>
 		
 									</div><!-- /.iconbox -->
@@ -780,8 +803,8 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 											</span>
 										</div><!-- /.iconbox-icon-wrap -->
 										<div class="contents">
-											<h3 class="font-weight-semibold">Smart Installation Tools</h3>
-											<p class="font-size-16 lh-165 text-fade-dark-04">Tools are beyond the one-click install, async tech merges with ultimate flexibility.</p>
+											<!-- <h3 class="font-weight-semibold">Smart Installation Tools</h3> -->
+											<!-- <p class="font-size-16 lh-165 text-fade-dark-04">Tools are beyond the one-click install, async tech merges with ultimate flexibility.</p> -->
 										</div>
 		
 									</div><!-- /.iconbox -->
@@ -1438,93 +1461,75 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 
 	<section>
 
-
-		<section id="contactUs" class="contact-address-area"  style="background-image: url(./assets/demo/bg/bg-79.svg); background-position: center top;">
+		<section id="contactUs"class="vc_row pt-50 pb-85" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":".lqd-column","duration":"1200","delay":"180","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":60,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
 			<div class="container">
-				<div class="sec-title-style1 text-center max-width">
-					<div class="title">Contact Us</div>
-					<div class="text">
-						<div class="decor-left"><span></span></div>
-						<p>Quick Contact</p>
-						<div class="decor-right"><span></span></div>
-					</div>
-					<div class="bottom-text">
-						<!-- <p>Fixyman is proud to be the name that nearly 1 million homeowners have trusted since 1996 for home improvement and repair, providing virtually any home repair.</p> -->
-					</div>
-				</div>
-				<div class="contact-address-box row">
-					<!--Start Single Contact Address Box-->
-					<div class="col-sm-4 single-contact-address-box text-center">
-						<div class="icon-holder">
-							<span class="icon-clock-1">
-								<span class="path1"></span><span class="path2"></span><span class="path3"></span><span
-									class="path4"></span><span class="path5"></span><span class="path6"></span><span
-									class="path7"></span><span class="path8"></span><span class="path9"></span><span
-									class="path10"></span><span class="path11"></span><span class="path12"></span><span
-									class="path13"></span><span class="path14"></span><span class="path15"></span><span
-									class="path16"></span><span class="path17"></span><span class="path18"></span><span
-									class="path19"></span><span class="path20"></span>
-							</span>
-						</div>
-						<!-- <h3>Lorem Ipsum</h3> -->
-						<h2> Have Queries ? </h2>
-					</div>
-					<!--End Single Contact Address Box-->
-					<!--Start Single Contact Address Box-->
-					<div class="col-sm-4 single-contact-address-box main-branch">
-						<!-- <h3>Lorem Ipsum</h3> -->
-						<div class="inner">
-							<ul>
-								<!-- <li>
-													<div class="title">
-														<h4>Address:</h4>
-													</div>
-													<div class="text">
-														<p> <br> Lorem Ipsum, Ch 98054</p>
-													</div>
-												</li> -->
-								<li>
-									<div class="title">
-										<h4>Mail us at :</h4>
-									</div>
-									<div class="text">
-										<p><br> admin@linkedlist.tech</p>
-									</div>
-								</li>
-								<li>
-									<div class="title">
-										<h4>Office Hrs:</h4>
-									</div>
-									<div class="text">
-										<p>Mon-Sat: 9:00am - 6:00pm<br> Sun: Closed</p>
-									</div> <br>
-									<div class="text">
-										<p> +919716838625</p>
-										<p> +91 124 425 3467</p>
-									</div>
-								</li>
-								
-							</ul>
-						</div>
-					</div>
-					<!--End Single Contact Address Box-->
-					<!--Start Single Contact Address Box-->
-					<div class="col-sm-4 single-contact-address-box text-center">
-						<div class="icon-holder">
-							<span class="icon-question-2">
-								<span class="path1"></span><span class="path2"></span><span class="path3"></span><span
-									class="path4"></span>
-							</span>
-						</div>
-						<!-- <h3>Lorem Ipsum</h3> -->
-						<h2> Are you looking for a professional product !! </h2>
-						<h2> Connect with us !</h2>
-					</div>
-					<!--End Single Contact Address Box-->
-				</div>
-			</div>
+
+				<div class="row">
+
+					<div class="lqd-column col-md-8 col-md-offset-2">
+
+						<header class="fancy-title text-center mb-50">
+							<h2>Have a question?</h2>
+						</header>
+
+					</div><!-- /.col-md-8 col-md-offset-2 -->
+
+				</div><!-- /.row -->
+
+				<div class="row">
+
+					<div class="lqd-column col-md-4">
+
+						<div class="iconbox iconbox-circle iconbox-sm iconbox-heading-xs border-gray border-gray px-5 py-5" style="height: 237px;">
+							<div class="iconbox-icon-wrap">
+								<span class="iconbox-icon-container">
+									<i class="fa fa-envelope-o"></i>
+								</span>
+							</div><!-- /.iconbox -->
+							<div class="contents">
+								<h3>admin@linkedlist.tech</h3>
+								<!-- <p>Praesent pharetra risus pharetra orci pharetra dolor eleifend.</p> -->
+							</div><!-- /.iconbox -->
+						</div><!-- /.iconbox -->
+
+					</div><!-- /.col-md-4 -->
+
+					<div class="lqd-column col-md-4">
+
+						<div class="iconbox iconbox-circle iconbox-sm iconbox-heading-xs border-gray border-gray px-5 py-5">
+							<div class="iconbox-icon-wrap">
+								<span class="iconbox-icon-container">
+									<i class="fa fa-map-marker"></i>
+								</span>
+							</div><!-- /.iconbox -->
+							<div class="contents">
+								<h3>740-5 Udyog Vihar, <br>Gurgaon 122016</h3>
+								<!-- <p>Praesent pharetra risus pharetra orci pharetra dolor eleifend.</p> -->
+							</div><!-- /.iconbox -->
+						</div><!-- /.iconbox -->
+
+					</div><!-- /.col-md-4 -->
+
+					<div class="lqd-column col-md-4">
+
+						<div class="iconbox iconbox-circle iconbox-sm iconbox-heading-xs border-gray border-gray px-5 py-5" style="height: 237px;">
+							<div class="iconbox-icon-wrap">
+								<span class="iconbox-icon-container">
+									<i class="fa fa-phone"></i>
+								</span>
+							</div><!-- /.iconbox -->
+							<div class="contents">
+								<h3>+91 9716838625</h3>
+								<!-- <p>Praesent pharetra risus pharetra orci pharetra dolor eleifend.</p> -->
+							</div><!-- /.iconbox -->
+						</div><!-- /.iconbox -->
+
+					</div><!-- /.col-md-4 -->
+
+				</div><!-- /.row -->
+
+			</div><!-- /.container -->
 		</section>
-		<!--End Contact Address Area-->
 
 		<!--Start contact form area-->
 		<section class="vc_row pb-100">
@@ -1565,15 +1570,16 @@ gstatic\.com/" to="https://$1.gstatic.com/"/> -->
 									<form id="contact_form" name="contact_form" class="default-form">
 										<div class="row d-flex flex-wrap">
 											<div class="lqd-column col-md-6 mb-20">
-												<input class="lh-25 mb-30" id="name" type="text" name="name" aria-required="true" aria-invalid="false" placeholder="First Name" required>
+												<input class="lh-25 mb-30" id="firstname" type="text" name="firstname" aria-required="true" aria-invalid="false" placeholder="First Name" required>
 												<input class="lh-25 mb-30" id="email" type="email" name="email" aria-required="true" aria-invalid="false" placeholder="Your email address" required>
 												<input class="lh-25 mb-30 ml-3" id="phone" type="tel" name="phone" aria-required="true" aria-invalid="false" placeholder="Mobile no" maxlength="10"  pattern="[0-9]{10}" required>
 											</div><!-- /.col-md-6 -->
 											<div class="lqd-column col-md-6 mb-20">
+												<input class="lh-25 mb-30" id="lastname" type="text" name="lastname" aria-required="true" aria-invalid="false" placeholder="Last Name" required>
 												<textarea cols="10" rows="6" id="message" name="message" aria-required="true" aria-invalid="false" placeholder="Message" required></textarea>
 											</div><!-- /.col-md-12 -->
 											<div class="lqd-column col-md-6">
-												<p class="font-size-16 opacity-07"><em>We all know how important your information is. They are always safe with us.</em></p>
+												<p class="font-size-16 opacity-07 contact-footer"><em>We all know how important your information is. They are always safe with us.</em></p>
 											</div><!-- /.col-md-6 -->
 											<div class="lqd-column col-md-6 text-md-right">
 												<button type="submit" onclick="submitFunc() ;"  data-loading-text="Please wait..." class="font-size-13 ltr-sp-1 font-weight-bold" style="color: white;">
