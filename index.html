@@ -1559,14 +1559,18 @@ outline: none;
 									<form id="contact_form" name="contact_form" class="default-form">
 										<div class="row d-flex flex-wrap">
 											<div class="lqd-column col-md-6 mb-20">
-												<input class="lh-25 mb-30" id="firstname" type="text" name="firstname" aria-required="true" aria-invalid="false" placeholder="First Name" required>
+												<input class="lh-25 mb-30" id="name" type="text" name="name" aria-required="true" aria-invalid="false" placeholder="Name" required>
 												<input class="lh-25 mb-30" id="email" type="email" name="email" aria-required="true" aria-invalid="false" placeholder="Your email address" required>
-												<input class="lh-25 mb-30 ml-3" id="phone" type="tel" name="phone" aria-required="true" aria-invalid="false" placeholder="Mobile no" maxlength="10"  pattern="[0-9]{10}" required>
+
 											</div><!-- /.col-md-6 -->
 											<div class="lqd-column col-md-6 mb-20">
-												<input class="lh-25 mb-30" id="lastname" type="text" name="lastname" aria-required="true" aria-invalid="false" placeholder="Last Name" required>
-												<textarea cols="10" rows="6" id="message" name="message" aria-required="true" aria-invalid="false" placeholder="Message" required></textarea>
+												<input class="lh-25 mb-30 ml-3" id="phone" type="tel" name="phone" aria-required="true" aria-invalid="false" placeholder="Mobile no" maxlength="10"  pattern="[0-9]{10}" required>
+
+
 											</div><!-- /.col-md-12 -->
+											<div class="lqd-column col-md-6 mb-20">
+											<textarea cols="10" rows="6" id="message" name="message" aria-required="true" aria-invalid="false" placeholder="Message" required></textarea>
+											</div>
 											<div class="lqd-column col-md-6">
 												<p class="font-size-16 opacity-07 contact-footer"><em>We all know how important your information is. They are always safe with us.</em></p>
 											</div><!-- /.col-md-6 -->
@@ -1578,7 +1582,7 @@ outline: none;
 												<div id="snackbar" style="visibility: hidden;">Your message has been sent. You will be notified soon ! </div>
 												<!-- <input type="submit" value="Send message" class="font-size-13 ltr-sp-1 font-weight-bold"> -->
 											</div><!-- /.col-md-6 -->
-											
+
 										</div><!-- /.row -->
 									</form>
 									<div class="contact-form-result hidden"></div><!-- /.contact-form-result -->
